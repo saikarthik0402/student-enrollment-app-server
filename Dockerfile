@@ -7,7 +7,7 @@ WORKDIR /home/app
 COPY . /home/app
 COPY --from=student-enrollment-app-image:latest /home/app/dist /home/app/dist
 
-RUN ls
+#RUN ls
 RUN npm install
 
 CMD [ "npm", "start" ]
